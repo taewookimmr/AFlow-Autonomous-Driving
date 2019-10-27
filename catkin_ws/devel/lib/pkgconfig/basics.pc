@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws/devel
+
+Name: basics
+Description: Description of basics
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nvidia/catkin_ws/devel/lib 
+Requires: roscpp sensor_msgs std_msgs cv_bridge image_transport

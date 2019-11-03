@@ -747,6 +747,9 @@ message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
+//Dependencies for target
+naver_LIB_DEPENDS:STATIC=
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
 
@@ -800,6 +803,9 @@ test_lidar_BINARY_DIR:STATIC=/home/nvidia/catkin_ws/build/test_lidar
 
 //Value Computed by CMake
 test_lidar_SOURCE_DIR:STATIC=/home/nvidia/catkin_ws/src/test_lidar
+
+//Dependencies for target
+twk_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 usb_cam_BINARY_DIR:STATIC=/home/nvidia/catkin_ws/build/usb_cam

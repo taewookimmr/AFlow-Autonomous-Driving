@@ -5,4 +5,4 @@ Description: Description of ros_cpp_test
 Version: 0.0.0
 Cflags: 
 Libs: -L/home/nvidia/catkin_ws/install/lib 
-Requires: 
+Requires: roscpp sensor_msgs std_msgs cv_bridge image_transport

@@ -1180,6 +1180,19 @@ _run_tests_darknet_ros/fast:
 .PHONY : _run_tests_darknet_ros/fast
 
 #=============================================================================
+# Target rules for targets named image_node
+
+# Build rule for target.
+image_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image_node
+.PHONY : image_node
+
+# fast build rule for target.
+image_node/fast:
+	$(MAKE) -f ros_cpp_test/CMakeFiles/image_node.dir/build.make ros_cpp_test/CMakeFiles/image_node.dir/build
+.PHONY : image_node/fast
+
+#=============================================================================
 # Target rules for targets named listener
 
 # Build rule for target.
@@ -1517,6 +1530,7 @@ help:
 	@echo "... darknet_ros_lib"
 	@echo "... run_tests_darknet_ros"
 	@echo "... _run_tests_darknet_ros"
+	@echo "... image_node"
 	@echo "... listener"
 	@echo "... ros_cpp_test_generate_messages_eus"
 	@echo "... ros_cpp_test_geneus"

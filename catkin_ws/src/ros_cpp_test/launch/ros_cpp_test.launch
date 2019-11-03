@@ -2,6 +2,7 @@
 
 
         <node name="listener" pkg="ros_cpp_test" type="listener" output="screen"/>
+        <!-- <node name="image_node" pkg="ros_cpp_test" type="image_node"/> -->
         <node name="key_publisher" pkg="basics" type="key_publisher.py" output="screen"/>
 
         <arg name="launch_prefix" default=""/>

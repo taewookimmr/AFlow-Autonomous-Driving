@@ -1,0 +1,20 @@
+# terminal 1
+  >> cd catkin_ws && catkin_make
+  >> roscore
+
+# terminal 2
+  >> cd catkin_ws &&  source ./devel/setup.bash
+  >> rosrun hls_lfcd_driver hlds_laser_publisher
+  
+# terminal 3 
+  >> cd catkin_ws && source ./devel/setup.bash
+  >> rosrun usb_cam usb_cam_node
+  
+# terminal 4
+  >> cd catkin_ws && source ./devel/setup.bash
+  >> // to be updated. related with permission and ownership on file.
+  >> roslaunch ros_cpp_test ros_cpp_test
+  
+# terminal 5
+  >> cd catkin_ws && source ./devel/setup.bash
+  >> rosrun ros_cpp_test image_node
